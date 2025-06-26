@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR GP ANSOR WONOJOYO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .mobile-menu-toggle {
+            transition: transform 0.3s ease;
+        }
+        .mobile-menu-toggle.active {
+            transform: rotate(90deg);
+        }
+        .section {
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-[#116530] text-white z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="img/LOGO ANSOR.png" alt="Organization Logo" class="h-8 w-auto mr-2">
+                        <span class="text-xl font-bold">PR GP ANSOR WONOJOYO</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#about" class="nav-link px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#activity" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Activity</a>
+                        <a href="#services" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                        <a href="#contact" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="mobile-menu-toggle text-white hover:text-gray-300 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0d4e24]">
+            <div class="px-4 py-3 flex items-center border-b border-gray-700">
+                <img src="img/LOGO ANSOR.png" alt="Organization Logo" class="h-8 w-auto mr-2">
+                <span class="text-xl font-bold">PR GP ANSOR WONOJOYO</span>
+            </div>
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#Tentang Kami" class="block px-3 py-2 rounded-md text-base font-medium">Tentang Kami</a>
+                <a href="#Program" class="block px-3 py-2 rounded-md text-base font-medium">Program</a>
+                <a href="#Pencapaian" class="block px-3 py-2 rounded-md text-base font-medium">Pencapaian</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section flex items-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/foto\ Ansor.jpg');">
+        <div class="text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 font-[EB+Garamond]">Pimpinan Ranting Gerakan Pemuda ANSOR Desa Wonojoyo</h1>
+            <p class="text-xl text-white mb-8 max-w-2xl mx-auto font-[EB+Garamond]">Menjadi Wadah Pemuda Nahdlatul Ulama yang berkontribusi untuk kemajuan Desa berbasis Keislaman dan Kebangsaan</p>
+            <button class="bg-[#116530] hover:bg-[#0d4e24] text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                <span class="font-[EB+Garamond]">Learn More</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section flex items-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/foto\ ngopi.jpg');">
+        <div class="max-w-4xl mx-auto px-4 py-20">
+            <div class="bg-white bg-opacity-90 p-8 rounded-lg shadow-xl">
+                <h2 class="text-3xl font-bold text-[#116530] mb-6">Tentang Kami</h2>
+                <p class="text-gray-700 mb-4">
+                    Pimpinan Ranting Gerakan Pemuda Ansor (GP ANSOR) Desa Wonojoyo adalah organisasi kepemudaan dibawah Naungan Ranting Nahdlatul Ulama (NU) Desa Wonojoyo yang bergerak dibidang kepemudaan dan kemasyarakatan.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    Organisasi ini bertujuan untuk membentuk pemuda indonesia yang cerdas, tangguh, beriman dan berakhlaq mulia serta berperan aktif dalam kegiatan kemasyarakatan sekaligus menjaga Pancasila dan keutuhan NKRI.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                    <div class="bg-[#e8f5e9] p-4 rounded-lg">
+                        <h3 class="font-bold text-blue-800 mb-2">Kepemudaan</h3>
+                        <p class="text-gray-700">mengembangkan kader pemuda yang cedas, tangguh, beriman , berakhlaq mulia dan patriotik</p>
+                    </div>
+                    <div class="bg-blue-100 p-4 rounded-lg">
+                        <h3 class="font-bold text-blue-800 mb-2">Kemasyarakatan</h3>
+                        <p class="text-gray-700">Berperan aktif dalam pemberdayaan pemuda dan masyarakat</p>
+                    </div>
+                    <div class="bg-blue-100 p-4 rounded-lg">
+                        <h3 class="font-bold text-blue-800 mb-2">Keagamaan</h3>
+                        <p class="text-gray-700">menjaga nilai-nilai Ahlussunnah Wal Jamaah An-Nahdliyah di Desa Wonojoyo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activity Section -->
+    <section id="activity" class="section flex items-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/foto\ activity.jpg');">
+        <div class="max-w-6xl mx-auto px-4 py-20">
+            <h2 class="text-3xl font-bold text-white text-center mb-12">Program</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg">
+                    <div class="text-[#116530] text-4xl mb-4">
+                        <img src="img/RA.jpg"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Rijalul Ansor</h3>
+                    <p class="text-gray-700">Menjaga Akidah Ahlussunnah wal Jamaah dengan Penganjian Rutin Setiap 2 Bulan Sekali </p>
+                </div>
+                <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <img src="img/banser.jpg"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Barisan Ansor Serbaguna (BANSER)</h3>
+                    <p class="text-gray-700">Membantu Keamanan masyarakat sekaligus menjadi garda terdepan Nahdlatul Ulama. </p>
+                </div>
+                <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <img src="img/zaroh.jpg"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Ziarah Rutin</h3>
+                    <p class="text-gray-700">Sebagai pengingat sejarah sekaligus mengenang jasa para Ulama yang telah memperjuangkan Agama Islam di Nusantara.</p>
+                </div>
+                <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <img src="img/foto ngopi.jpg"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Diskusi Rutin</h3>
+                    <p class="text-gray-700">Sebagai ajang untuk mempererat silaturrahim serta mempersiapkan agenda mendatang.</p>
+                </div>
+                <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <img src="img/PMJ Ansor.jpg"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Diklat dan Pelatihan</h3>
+                    <p class="text-gray-700">Berperan Aktif dalam mengedukasi masyarakat dan pemuda dengan mengadakan Diklat dan Pelatihan.</p>
+                </div>
+                <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <img src="img/jambore.jpg"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Kolaborasi dengan IPNU-IPPNU</h3>
+                    <p class="text-gray-700">Bersama IPNU-IPPNU Berkolaborasi untuk menata kader yang akan meneruskan perjuangan Nahdlatul Ulama dalam Menjaga akidah Ahlussunnah Wal Jamaah</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section flex items-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/takbir.jpg');">
+        <div class="max-w-4xl mx-auto px-4 py-20">
+            <h2 class="text-3xl font-bold text-white text-center mb-12">Pencapaian</h2>
+            <div class="bg-white bg-opacity-90 p-8 rounded-lg shadow-xl">
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-4">Pelatihan Pemulasaraan Jenazah</h3>
+                    <p class="text-gray-700 mb-4">
+                        Melaksanakan Pelatihan Pemulasaraan Jenazah bersama masyarakat yang di isi oleh PC NU Kab. Kediri, Hasil yang diperoleh antara lain :
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>Masyarakat mampu membantu merawat jenazah sesuai tuntunan syariat islam</li>
+                        <li>Peserta Diklat mampu melakukan diklat susulan di perumahan sukorejo indah</li>
+                        <li>Peserta diklat berperan aktif dalam merawat jenazah bersama penghulu</li>
+                    </ul>
+                </div>
+                
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-4">Festival Anak Sholeh</h3>
+                    <p class="text-gray-700 mb-4">
+                        Melaksanakan Festival anak sholeh berkolaborasi dengan IPNU IPPNU untuk mencari bakat dari kader NU di Wilayah Wonojoyo
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>Menghasilkan Kandidat kader yang mampu mewakili ranting di tingkat kecamatan</li>
+                        <li>mampu meraih juara umum di Porseni tingkat Kecamatan Gurah</li>
+                        <li>menghasilkan kader yang aktif dalam melestarikan kegiatan NU</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold text-blue-800 mb-4">Mengadakan Takbir keliling Rutin</h3>
+                    <p class="text-gray-700 mb-4">
+                        Bersama Pimpinan Ranting Nahdlatul Ulama desa Wonokjoyo mengadakan Agenda Rutin Tahunan Yaitu Takbir keliling yang diadakan setiap malam Idul Adha. 
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>mensyiarkan semangat Nahdlatul Ulama kepada seluruh lapisan masyarakat</li>
+                        <li>memberikan ruang untuk masyarakat dalam berkreasi tanpa mengurangi nilai Keislaman</li>
+                        <li>Sebagai wadah pengkaderan secara tidak langsung pada TPA TPQ di Desa Wonojoyo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section flex items-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3def7038-63eb-438f-b2ca-d6ebccbd7338.png');">
+        <div class="max-w-4xl mx-auto px-4 py-20">
+            <div class="bg-white bg-opacity-90 p-8 rounded-lg shadow-xl">
+                <h2 class="text-3xl font-bold text-blue-800 mb-6 text-center">Kontak Kami</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700 mb-4">Pesan dan Kesan</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-1">Nama</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-1">Pesan dan Kesan</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="bg-[#116530] hover:bg-[#0d4e24] text-white font-bold py-2 px-6 rounded-lg transition duration-300 w-full">
+                                Kirim pesan
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700 mb-4">Koneksi Kami</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                </div>
+                                <p class="text-gray-700">Dusun Krajan Lor Desa Wonojoyo Kec. Gurah</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone text-blue-600"></i>
+                                </div>
+                                <p class="text-gray-700">+62-851-4388-4484</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <p class="text-gray-700">ansorwonojoyo@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-blue-700 mt-8 mb-4">Ikuti Kami</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://https://www.instagram.com/gp_ansorwonojoyo?igsh=ZWxua2hldWQ2MHdk" target="_blank" class="bg-[#e8f5e9] hover:bg-[#0d4e24] hover:text-white p-3 rounded-full transition duration-300">
+                                <i class="fab fa-instagram text-blue-600 text-xl"></i>
+                            </a>
+                            <a href="https://youtube.com/@PRGPAnsorWonojoyo" target="_blank" class="bg-blue-100 hover:bg-blue-200 p-3 rounded-full transition duration-300">
+                                <i class="fab fa-youtube text-blue-600 text-xl"></i>
+                            </a>
+                            <a href="https://https://m.facebook.com/profile.php?id=100094176314365&name=xhp_nt_fbaction_open_user" target="_blank" class="bg-blue-100 hover:bg-blue-200 p-3 rounded-full transition duration-300">
+                                <i class="fab fa-facebook-f text-blue-600 text-xl"></i>
+                            </a>
+                            <a href="https://wa.me/085143884484" target="_blank" class="bg-blue-100 hover:bg-blue-200 p-3 rounded-full transition duration-300">
+                                <i class="fab fa-whatsapp text-blue-600 text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            menuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                this.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-[#0d4e24] text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center
